@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Math Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="container">
+        <h1>Multiplication Math Game</h1>
+        <div id="registration">
+            <form id="registrationForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required minlength="3">
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required minlength="3">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" disabled>
+
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required pattern=".*@gmail\.com$">
+
+                <button type="button" id="registerButton" onclick="register()">Register</button>
+            </form>
+        </div>
+
+        <div id="question" style="display: none;">
+            <span id="num1"></span> x <span id="num2"></span> =
+            <input type="number" id="answer" min="0">
+            <button id="submit" onclick="checkAnswer()">Submit</button>
+            <button type="button" id="startButton" onclick="playGame()" disabled>Start</button>
+            <button type="button" id="checkAnswerButton" onclick="checkAnswer()" disabled>Check Answer</button>
+            <button type="button" id="nextButton" onclick="nextQuestion()" disabled>Next</button>
+            <button type="button" id="percentageScoreButton" onclick="findPercentageScore()">PercentageScore</button>
+             <button type="button" onclick="endGame()">End</button>
+        </div>
+
+        <!-- Task 9: Add a statistic display area -->
+        <textarea id="showpercentage" rows="5" cols="50" readonly></textarea>
+    
+            <div id="showallplayers"></div>
+        <div id="score" style="display: none;">
+            <p>Name: <span id="playerName"></span></p>
+            <p>Total Questions: <span id="totalQuestions">0</span></p>
+            <p>Correct Answers: <span id="correctAnswers">0</span></p>
+            <p>Percentage: <span id="percentage">0%</span></p>
+        </div>
+    </div>
+<br>
+<br>
+<div id="chartsContainer">
+<div id="showcharts"></div>
+</div>
+</body>
+</html>

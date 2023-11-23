@@ -1,0 +1,136 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+   background-color: #fcfbf4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 28px;
+
+}
+
+h1 {
+    color: #12086f;
+    
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #12086f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2b35af;
+}
+
+#question {
+    margin-top: 20px;
+    display: none;
+}
+
+#num1,
+#num2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+#answer {
+    padding: 8px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#showallplayers, #showcharts {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+#submit,
+#startButton,
+#checkAnswerButton,
+#nextButton,
+#endButton {
+    margin-top: 10px;
+}
+
+#showpercentage {
+    margin-top: 20px;
+    width: 100%;
+}
+#showallplayers p {
+    margin-bottom: 20px;
+}
+
+#showallplayers {
+    margin-top: 20px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#score {
+    display: none;
+    margin-top: 20px;
+}
+
+#playerName {
+    color: black;
+    font-weight: bold;
+
+    #container {
+
+margin: 20px;
+}
+
+}
+#chartsContainer {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+margin: 20px 0;
+}
+
+#showcharts {
+    max-width: 600px;
+    margin: 0 auto;
+}
